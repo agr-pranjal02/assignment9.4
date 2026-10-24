@@ -1,0 +1,419 @@
+
+/* ---------- Global Styles ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #172033;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ---------- Header / Navbar ---------- */
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.navbar {
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #172033;
+}
+
+.logo span {
+    color: #635bff;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #606a7b;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #635bff;
+}
+
+.nav-cta {
+    background: #635bff;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    font-weight: bold;
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 60px;
+    padding-top: 75px;
+    padding-bottom: 85px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.eyebrow {
+    color: #635bff;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    color: #172033;
+    font-size: 3.5rem;
+    line-height: 1.12;
+    letter-spacing: -2px;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: #635bff;
+}
+
+.hero-description {
+    max-width: 520px;
+    color: #687386;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.92rem;
+}
+
+.btn-primary {
+    background: #635bff;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    border: 1px solid #d9dce5;
+    color: #172033;
+}
+
+.hero-note {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 28px;
+    color: #687386;
+    font-size: 0.85rem;
+}
+
+.status-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #26b987;
+}
+
+.hero-visual {
+    position: relative;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+    background: #e9e8ff;
+}
+
+.image-label {
+    position: absolute;
+    left: -22px;
+    bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 17px 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 35px rgba(23, 32, 51, 0.12);
+}
+
+.label-icon {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #eeedff;
+    color: #635bff;
+    font-size: 1.5rem;
+}
+
+.image-label strong {
+    font-size: 0.95rem;
+}
+
+.image-label p {
+    color: #687386;
+    font-size: 0.8rem;
+}
+
+/* ---------- Services Section ---------- */
+.services {
+    padding: 85px 0;
+    background: #f7f8fc;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.section-heading > p:last-child {
+    color: #687386;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.feature-card {
+    background: #ffffff;
+    padding: 30px;
+    border: 1px solid #eceef5;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.feature-icon {
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: #eeedff;
+    color: #635bff;
+    font-size: 1.7rem;
+}
+
+.feature-card h3 {
+    font-size: 1.2rem;
+}
+
+.feature-card p {
+    color: #687386;
+    font-size: 0.95rem;
+    flex-grow: 1;
+}
+
+.feature-card > a {
+    color: #635bff;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* ---------- About Section ---------- */
+.about {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.about h2 {
+    max-width: 450px;
+    font-size: 2.2rem;
+    line-height: 1.25;
+}
+
+.about > p {
+    max-width: 500px;
+    color: #687386;
+    font-size: 1.02rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background: #172033;
+    color: #ffffff;
+    padding: 28px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content p,
+.footer-content > a:last-child {
+    color: #c3cada;
+    font-size: 0.85rem;
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1000px) {
+    .hero {
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-image {
+        height: 360px;
+    }
+
+    .image-label {
+        left: -10px;
+    }
+
+    .feature-card {
+        padding: 22px;
+    }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 700px) {
+    .navbar {
+        padding: 18px 0;
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    .nav-cta {
+        padding: 10px 13px;
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 38px;
+        padding-top: 48px;
+        padding-bottom: 60px;
+    }
+
+    .hero h1 {
+        font-size: 2.7rem;
+        letter-spacing: -1px;
+    }
+
+    .hero-image {
+        height: auto;
+        max-height: 380px;
+        aspect-ratio: 4 / 3;
+    }
+
+    .image-label {
+        left: 12px;
+        bottom: 12px;
+        padding: 12px;
+    }
+
+    .services {
+        padding: 60px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        padding-top: 55px;
+        padding-bottom: 55px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .about h2 {
+        font-size: 1.9rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
